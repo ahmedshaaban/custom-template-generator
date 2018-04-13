@@ -45,7 +45,7 @@ module.exports = function (options) {
      * @param {array} args
      */
     function getFiles(dir, files_) {
-        if (dir === undefined || !fs.existsSync(dir.toLowerCase())) {
+        if (dir === undefined || !fs.existsSync(dir)) {
             return [];
         }
 
